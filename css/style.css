@@ -1,0 +1,2353 @@
+@font-face {
+    font-family: 'Cygre Black';
+    src: url('fonts/Cygre-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cygre Black Italic';
+    src: url('fonts/Cygre-BlackIt.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cygre Bold';
+    src: url('fonts/Cygre-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cygre Bold Italic';
+    src: url('fonts/Cygre-BoldIt.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cygre Book';
+    src: url('fonts/Cygre-Book.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cygre Book Italic';
+    src: url('fonts/Cygre-BookIt.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cygre ExtraBold';
+    src: url('fonts/Cygre-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cygre ExtraBold Italic';
+    src: url('fonts/Cygre-ExtraBoldIt.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cygre Light';
+    src: url('fonts/Cygre-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cygre Light Italic';
+    src: url('fonts/Cygre-LightIt.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cygre Medium';
+    src: url('fonts/Cygre-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cygre Medium Italic';
+    src: url('fonts/Cygre-MediumIt.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cygre Regular';
+    src: url('fonts/Cygre-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cygre Regular Italic';
+    src: url('fonts/Cygre-RegularIt.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cygre SemiBold';
+    src: url('fonts/Cygre-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cygre SemiBold Italic';
+    src: url('fonts/Cygre-SemiBoldIt.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cygre Thin';
+    src: url('fonts/Cygre-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cygre Thin Italic';
+    src: url('fonts/Cygre-ThinIt.ttf') format('truetype');
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-primary{
+    padding: 12px 63px;
+    border-radius: 2px;
+    border: none;
+    background: #E5EE01;
+    color: #000000;
+    font-family: 'Cygre Medium';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.87px;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.header{
+    display: flex;
+    padding: 22px 80px;
+    text-align: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+}
+
+.hr-header{
+    border: none;
+    width: 100%;
+    height: 2px;
+    background: #F6F6F6;
+    margin: 0;
+}
+
+.header-ul{
+    list-style: none;
+        
+}
+
+.header-li{
+    display: inline-block;
+}
+
+.header-li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #888888;
+    font-family: 'Cygre Medium';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.87px;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+}
+
+.icons a{
+    text-decoration: none;
+    margin-right: 16px;
+}
+
+/* .basket-icon{
+    background: #008BCE;
+} */
+
+.main-image{
+    width: 100%;
+    margin: 0;
+}
+
+.main-baner{
+    width: 100%;
+    max-height: 805px;
+    object-fit: cover;
+}
+
+.container{
+    margin: 60px 80px;
+}
+
+.container-cells{
+    margin-top: 24px;
+}
+
+.div-categories{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+.div-category{
+    width: 25%;
+    position: relative;
+}
+
+.img-category{
+    height: 625px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.name-category,
+.btn-category {
+    position: absolute;
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1; 
+}
+
+.btn-category{
+    bottom: 0;
+}
+
+.name-category{
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    bottom: 7%;
+}
+
+.div-slide{
+    width: 100%;
+}
+
+.slide-img{
+    width: 100%;
+}
+
+.slider-popular-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card-popular-product{
+    width: 20%;
+    max-width: 320px;
+    padding: 20px;
+    margin-right: 20px;
+    border: 1px solid #D7D7D7;
+}
+
+.card-popular-product:last-child {
+    margin-right: 0;
+}
+
+.img-card-popular-product{
+    max-width: 200px;
+}
+
+.main-text-poplar-product{
+    text-transform: uppercase;
+    font-family: 'Cygre SemiBold';
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.popular-category-name{
+    text-transform: uppercase;
+    font-family: 'Cygre Medium';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22.64px;
+    color: #D7D7D7;
+    margin-top: 0;
+    margin-bottom: 7.5px;
+}
+
+.popular-product-name{
+    font-family: 'Cygre Book';
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 18px;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 7.5px;
+}
+
+.popular-card-price{
+    font-family: 'Cygre Medium';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #000;
+    margin-top: 0;
+    margin-bottom: 7.5px;
+}
+
+.div-production{
+    position: relative;
+    width: 100%;
+}
+
+.img-production{
+    position: relative;
+    width: 100%;
+    max-height: 570px;
+    object-fit: cover;
+}
+
+.content-production {
+    position: absolute;
+    bottom: 0;
+    /* left: 26%; */
+    transform: translate(5%, -15%);
+    max-width: 630px;
+}
+
+.main-text-production{
+    font-family: 'Cygre SemiBold';
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.subtext-production{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.div-technologies{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-height: 420px;
+}
+
+.div-left-technologies{
+    max-height: 420px;
+    background: #282828;
+    padding: 51px 68px;
+    width: 50%;
+    margin-right: 20px;
+    color: #FFFFFF;
+}
+
+.subtext-technologies{
+    margin-top: 32px;
+    margin-bottom: 20px;
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    max-width: 495px;
+}
+
+.p-name-owner{
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+.p-subname-owner{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    color: #DDDDDD;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+.div-right-technologies{
+    height: 100%;
+    width: 50%;
+}
+
+.img-right-technologies{
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+}
+
+.div-social-media{
+    background: #DBE3E5;
+    padding-top: 32px;
+    padding-bottom: 82px;
+    width: 100%;
+    text-align: center;
+}
+
+.main-text-social-media{
+    margin-top: 0;
+    margin-bottom: 32px;
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+
+}
+
+.div-images-social-media{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding-left: 5%;
+}
+
+.img-social-media{
+    width: 20%;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.div-icons-social-media{
+    margin-top: 32px;
+}
+
+.icon-social-media{
+    margin-right: 24px;
+}
+
+.icon-social-media:last-child{
+    margin-right: 0;
+}
+
+.footer{
+    background: #282828;
+    color: #F1F1F1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 70px; 
+}
+
+.h-text-header{
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.left-content-footer{
+    width: 40%;
+    margin-left: 5%;
+}
+
+.left-content-footer svg{
+    margin-bottom: 32px;
+}
+
+.left-span-footer{
+    margin: 0;
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+
+}
+
+.center-content-footer{
+    width: 30%;
+}
+
+.center-span-footer{
+    margin: 0;
+    max-width: 300px;
+    font-family: Cygre Book;
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+}
+
+.right-content-footer{
+    width: 30%;
+}
+
+.links-docs-footer{
+    max-width: 300px;
+}
+
+.links-docs-footer a{
+    text-decoration: none;
+    color: #F1F1F1;
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+}
+
+.hr-footer{
+    border: none;
+    height: 2px;
+    width: 30px;
+    margin: 16px 0;
+    background-color: #008BCE;
+}
+
+
+
+/* Shop */
+
+.link-cells{
+    text-decoration: none;
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    color: #000;
+    margin-right: 12px;
+}
+
+.main-section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters{
+    width: 20%;
+}
+
+.name-filter{
+    font-family: 'Cygre Medium';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #000;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.hr-main-section{
+    border: none;
+    height: 3px;
+    width: 30px;
+    background: #D7D7D7;
+    margin: 0;
+    margin-top: 16px;
+}
+
+.div-subname-filter{
+    margin-bottom: 33px;
+}
+
+.subname-filter{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    font-family: 'Cygre Book';
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 18px;
+    color: #000;
+}
+
+.main-section-content{
+    width: 80%;
+}
+
+.row-shop-content{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card-shop{
+    width: 20%;
+    border: 1px solid #D7D7D7;
+    padding: 20px;
+    margin-right: 20px;
+    max-width: 240px;
+}
+
+.card-shop:last-child{
+    margin-right: 0;
+}
+
+.img-card-shop{
+    max-width: 200px;
+}
+
+/* Card */
+.container-card-information{
+    margin-left: 210px;
+    margin-right: 210px;
+}
+
+.main-card-information{
+    display: flex;
+    width: 100%;
+}
+
+.div-slider-card-image{
+    width: 50%;
+}
+
+.div-card-description{
+    width: 50%;
+}
+
+.slide-card-image{
+    max-width: 500px;
+    width: 100%;
+}
+
+.main-card-description{
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    margin: 0;
+    max-width: 500px;
+}
+
+.hr-card-description{
+    border: none;
+    height: 3px;
+    width: 32px;
+    margin: 24px 0;
+    background: #D7D7D7;
+}
+
+.div-p-card-description{
+    max-width: 500px;
+}
+.p-card-description{
+    font-family: 'Cygre Book';
+    font-size: 20px;
+    font-weight: 350;
+    line-height: 24px;
+    color: #000;
+    margin-top: 0;
+}
+
+.p-card-handle{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+}
+
+.div-choice-handle{
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.btn-choice-handle{
+    width: 58px;
+    height: 57px;
+    border: 1px;
+    border: 1px solid #D7D7D7;
+    margin-right: 12px;
+    font-family: 'Cygre Book';
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 18px;
+}
+
+.div-price-busket{
+    display: flex;
+    align-items: center;
+}
+
+.span-price-description{
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    margin-right: 40px;
+}
+
+.btn-in-basket{
+    padding: 15px 54px;
+    background: #078ACB;
+    border: none;
+    font-family: 'Cygre Medium';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.87px;
+    color: #FFFFFF;
+}
+
+.div-specifications{
+    border-top: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+    padding: 30px 0;
+}
+
+.div-buttons-features{
+    display: flex;
+}
+
+.btn-features{
+    width: 305px;
+    height: 42px;
+    border: 1px solid #DDDDDD;
+    background: #FFFFFF;
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    text-align: center;
+    color: #666666;
+    align-items: center;
+}
+
+.btn-features-active{
+    width: 305px;
+    height: 42px;
+    border: 1px solid #DDDDDD;
+    background: #282828;
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    align-items: center;
+}
+
+.div-technical-technologies{
+    padding: 43px 32px;
+    border: 1px solid #DDDDDD;
+}
+
+.div-names-parametr-technical-technologies{
+    display: flex;
+    border-bottom: 1px solid #ECECEC;
+    padding: 13px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.div-names-technical-technologies{
+    width: 40%;
+}
+
+.div-parametrs-technical-technologies{
+    width: 60%;
+}
+
+.name-technical-technologies{
+    font-family: 'Cygre Medium';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.87px;
+    text-transform: uppercase;
+}
+
+.parametr-technical-technologies{
+    font-family: 'Cygre Book';
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 18px;
+    color: #666666;
+}
+
+.main-text-with-product{
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.main-text-same-this-product{
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+/* Technologies */
+.main-technologies-baner{
+    width: 100%;
+    position: relative;
+}
+
+.technologies-baner-image{
+    width: 100%;
+    object-fit: cover;
+    max-height: 350px;
+}
+
+.div-cells-technologies {
+    position: absolute;
+    top: 10%;
+    left: 5%; 
+    transform: translate(0%, -50%);
+}
+
+.main-text-technologies{
+    position: absolute;
+    bottom: -5%;
+    left: 5%;
+    transform: translate(0%, -50%);
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.div-main-about-technologies{
+    display: flex;
+    width: 100%;
+    /* justify-content: space-between; */
+}
+
+.div-main-left-about-technologies{
+    width: 80%;
+    margin-right: 130px;
+}
+
+.div-left-about-technologies{
+    padding: 32px;
+    background: #282828;
+    margin-bottom: 60px;
+}
+
+.h-left-about-technologies{
+    font-family: 'Cygre Medium';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.p-left-about-technologies{
+    margin: 0;
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    color: #FFFFFF;
+    width: 80%;
+}
+
+.div-right-main-about-technologies{
+    width: 20%;
+}
+
+.h-right-about-technologies{
+    font-family: 'Cygre Medium';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.p-link-right-about-technologies{
+    margin: 0;
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.p-link-right-about-technologies:last-child{
+    margin: 0;
+}
+
+.link-right-about-technologies{
+    color: #000;
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.table-technologies{
+    border: 1px solid #DDDDDD;
+}
+
+.head-table{
+    border-bottom: 1px solid #DDDDDD;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.left-head-table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #3097D0;
+    width: 40%;
+}
+
+.h-right-head-table{
+    font-family: 'Cygre Medium';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 37px 0;
+    text-transform: uppercase;
+}
+
+.div-foot-table{
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-foot-table{
+    margin: 0;
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+}
+
+.right-head-table{
+    width: 60%;
+}
+
+.div-kinetic-energy{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 44px;
+    padding-top: 44px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.div-image-kinetic-energy{
+    width: 45%;
+}
+
+.image-kinetic-energy{
+    width: 100%;
+    max-width: 265px;
+}
+
+.content-kinetic-energy{
+    width: 55%;
+}
+
+.main-text-content-kinetic-energy{
+    text-transform: uppercase;
+    font-family: 'Cygre Medium';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.image-content-kinetic-energy{
+    width: 100%;
+    margin-bottom: 24px;
+    max-width: 500px;
+}
+
+.p-text-content-kinetic-energy{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 32px;
+    max-width: 500px;
+}
+
+.p-text-content-kinetic-energy:last-child{
+    margin-bottom: 0;
+}
+
+.ul-text-content-kinetic-energy{
+    list-style-type: none;
+}
+
+.ul-text-content-kinetic-energy .li-text-content-kinetic-energy {
+    position: relative;
+    padding-left: 12px; 
+}
+
+.ul-text-content-kinetic-energy .li-text-content-kinetic-energy::before {
+    content: "•"; 
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 10px;
+}
+
+
+.li-text-content-kinetic-energy{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+}
+
+.div-comparison{
+    padding-top: 44px;
+    padding-bottom: 44px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.div-comparison-first{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    margin-bottom: 44px;
+}
+
+.div-comparison-second{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.div-standart-rocket{
+    text-align: center;
+    width: 20%;
+}
+
+.div-kinetic-rocket{
+    text-align: center;
+    width: 20%;
+}
+
+.image-comparison{
+    width: 100%;
+    max-width: 120px;
+}
+
+.image-comparison1{
+    width: 100%;
+    max-width: 157px;
+}
+
+.p-standart-comparison{
+    margin: 0;
+    margin-top: 16px;
+    font-family: 'Cygre Book';
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 18px;
+}
+
+.div-content-comparison{
+    width: 60%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.p-comparison{
+    max-width: 500px;
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+}
+
+.div-health{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 44px;
+    padding-top: 44px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.div-health-images{
+    width: 45%;
+}
+
+.image-health{
+    width: 100%;
+    max-width: 370px;
+}
+
+.div-health-content{
+    width: 55%;
+}
+
+.main-text-health-content{
+    font-family: 'Cygre Medium';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+}
+
+.text-health-content{
+    max-width: 500px;
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    
+}
+
+.div-with-diagrams{
+    display: flex;
+    justify-content: space-between; 
+}
+
+.names-diagram{
+    width: 50%;
+}
+
+.colors-div{
+    width: 50%;
+    border-left: 2px solid #797A7C;
+}
+
+.div-name-diagram{
+    width: 100%;
+    height: 33px;
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 4px; */
+    /* border-bottom: 2px solid #797A7C; */
+}
+
+.hr-diagrams-hor{
+    border: none;
+    border: 2px solid #797A7C;
+    margin: 0;
+    margin-top: 0.7px;
+}
+.div-persents{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+.div-numb-persents{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    padding-left: 9.9%;
+    margin-bottom: -5px;
+    border-left: 2px solid #797A7C;
+}
+
+.p-prsents{
+    font-family: 'Cygre Book';
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 18px;
+    margin: 0;
+}
+
+.p-prsents1{
+    margin: 0;
+    margin-left: 30%;
+}
+
+.name-diagram{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+
+}
+
+.color-div {
+    width: 100%;
+    height: 33px;
+    margin-top: 4px;
+}
+
+
+.gray1 {
+    width: 5%;
+    height: 100%;
+    float: left;
+    background-color: #797A7C;
+}
+
+.blue1 {
+    width: 58%;
+    height: 100%;
+    float: left;
+    background-color: #58C1E6;
+}
+
+.yellow1 {
+    width: 37%;
+    height: 100%;
+    float: left;
+    background-color: #F5BE37;
+}
+
+.gray2 {
+    width: 15%;
+    height: 100%;
+    float: left;
+    background-color: #797A7C;
+}
+
+.blue2 {
+    width: 52%;
+    height: 100%;
+    float: left;
+    background-color: #58C1E6
+}
+
+.yellow2 {
+    width: 33%;
+    height: 100%;
+    float: left;
+    background-color: #F5BE37;
+}
+
+.gray3 {
+    width: 3%;
+    height: 100%;
+    float: left;
+    background-color: #797A7C;
+}
+
+.blue3 {
+    width: 60%;
+    height: 100%;
+    float: left;
+    background-color: #58C1E6
+}
+
+.yellow3 {
+    width: 37%;
+    height: 100%;
+    float: left;
+    background-color: #F5BE37;
+}
+
+.gray4 {
+    width: 27%;
+    height: 100%;
+    float: left;
+    background-color: #797A7C;
+}
+
+.blue4 {
+    width: 40%;
+    height: 100%;
+    float: left;
+    background-color: #58C1E6
+}
+
+.yellow4 {
+    width: 33%;
+    height: 100%;
+    float: left;
+    background-color: #F5BE37;
+}
+
+.diagrams-rect{
+    display: flex;
+    justify-content: end;
+}
+
+.diagrams-rect-content{
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.gray-div{
+    width: 32px;
+    height: 32px;
+    background: #797A7C;
+}
+
+.yelow-div{
+    width: 32px;
+    height: 32px;
+    background: #F5BE37;
+}
+
+.blue-div{
+    width: 32px;
+    height: 32px;
+    background: #58C1E6;
+}
+
+.span-rect{
+    max-width: 115px;
+}
+
+.ionic-parag{
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.p-ionic{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+
+}
+
+.div-quad{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 44px;
+    padding-top: 44px;
+}
+
+.div-grafit{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    margin-top: 44px;
+    margin-bottom: 60px;
+}
+
+.div-grafit-images{
+    /* width: 45%; */
+    text-align: center;
+}
+
+.div-grafit-content{
+    width: 55%;
+}
+
+.p-grafit{
+    font-family: 'Cygre Book';
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 18px;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+.p-grafit-content{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    margin-bottom: 24px;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* construction */
+
+.main-construction-baner{
+    width: 100%;
+    position: relative;
+}
+
+.construction-baner-image{
+    width: 100%;
+    object-fit: cover;
+    max-height: 700px;
+}
+
+.div-cells-construction {
+    position: absolute;
+    top: 10%;
+    left: 5%; 
+    transform: translate(0%, -50%);
+}
+
+.div-main-text-construction{
+    position: absolute;
+    bottom: -5%;
+    left: 5%;
+    transform: translate(0%, -50%);
+}
+
+.main-text-construction{
+    font-family: 'Cygre Medium';
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 630px;
+    margin: 0;
+}
+
+.link-cells-white{
+    color: #FFFFFF;
+}
+
+.btn-primary-blue{
+    padding: 15px 54px;
+    background: #078ACB;
+    font-family: 'Cygre Medium';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.87px;
+    color: #FFFFFF;
+    border: none;
+    text-transform: uppercase;
+    width: 370px;
+    margin-top: 24px;
+}
+
+.div-kenetic-sport{
+    margin-bottom: 32px;
+}
+
+.main-texts-kenetic-sport{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main-text-ks{
+    width: 50%;
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.subtext-ks{
+    width: 50%;
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    /* max-width: 630px; */
+}
+
+.content-ks{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.left-content-ks{
+    width: 50%;
+}
+
+.item-left-content-ks{
+    background: #282828;
+    padding-top: 44px;
+    padding-left: 32px;
+    padding-bottom: 24px;
+    margin-right: 20px;
+}
+
+.gray-item-content-ks{
+    background: #F6F6F6;
+}
+
+.gray-item-content-ks .year-content-ks{
+    color: #282828;
+}
+
+.gray-item-content-ks .pleft-content-ks{
+    color: #282828;
+}
+
+.year-content-ks{
+    font-family: 'Cygre Medium';
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 80px;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.pleft-content-ks{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin: 0;
+    max-width: 375px;
+}
+
+.right-content-ks{
+    /* max-width: 630px; */
+    width: 50%;
+}
+
+.img-content-ks{
+    width: 100%;
+    /* max-width: 630px; */
+}
+
+.main-text-features{
+    text-transform: uppercase;
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    color: #282828;
+}
+
+.div-panel-features{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.info-panel-features{
+    width: 50%;
+    border: 2px solid #F6F6F6;
+    margin-right: 20px;
+}
+
+.info-panel-features2{
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.div-img-panel-features{
+    width: 50%;
+    max-height: 300px;
+}
+
+.img-panel-features{
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.main-text-info-panel-features{
+    font-family: 'Cygre Medium';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 0;
+    text-transform: uppercase;
+    margin-top: 80px;
+    margin-bottom: 24px;
+    margin-left: 44px;
+}
+
+.p-info-panel-features{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    margin: 0;
+    max-width: 540px;
+    margin-left: 44px;
+}
+
+.div-square-image{
+    width: 100%;
+    position: relative;
+}
+
+.img-square{
+    position: relative;
+    width: 100%;
+    max-height: 680px;
+    object-fit: cover;
+}
+
+.div-square-info{
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+    background: #F6F6F6;
+    padding: 44px;
+}
+
+.small-square-info{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    color: #282828;
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+.large-square-info{
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 32px;
+    color: #282828;
+    margin: 0;
+}
+
+.main-text-square{
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.div-table-contruction-price{
+    width: 100%;
+}
+
+.head-table-contruction-price{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #282828;
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+
+.head-text-table-constru{
+    font-family: 'Cygre Medium';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0;
+    text-transform: uppercase;
+    margin-left: 32px;
+}
+
+.div-text-table-contruction-price{
+    width: 33.33%;
+    max-width: 340px;
+    margin-left: 32px;
+}
+
+.body-table-contruction-price{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #F6F6F6;
+    margin-bottom: 1px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+
+.first-column-text-table-constru{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    margin: 0;
+    margin-left: 32px;
+}
+
+.second-column-text-table-constru{
+    font-family: 'Cygre Medium';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #282828;
+    margin: 0;
+    text-transform: uppercase;
+    margin-left: 32px;
+}
+
+.third-column-text-table-constru{
+    font-family: 'Cygre Medium';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #078ACB;
+    margin: 0;
+    text-transform: uppercase;
+    margin-left: 32px;
+}
+
+.btn-table-contruction-price{
+    width: 100%;
+    margin: 0;
+}
+
+.div-diagram-fast-growing{
+    display: flex;
+}
+
+.div-columns-diaram{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-right: 30px;
+}
+
+.div-inner-columns-diagram{
+    display: flex;
+}
+
+.div-column-diagram{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-right: 2px;
+}
+
+.div-black-diagram{
+    width: 40px;
+    height: 215px;
+    background: #282828;
+}
+
+.div-white-diagram{
+    width: 40px;
+    height: 288px;
+    background: #F6F6F6;
+}
+
+.count-diagram-fast-growing{
+    max-width: 40px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.span-count-diagram-fast-growing{
+    font-family: 'Cygre Book';
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 18px;
+    text-align: center;
+    color: #282828;
+}
+
+.country-diagram-fast-growing{
+    text-align: center;
+    margin-top: 12px;
+}
+
+.span-country-diagram-fast-growing{
+    font-family: 'Cygre Book';
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 18px;
+    text-align: center;
+    color: #282828;
+}
+
+.div-fast-growing-sport{
+    display: flex;
+    width: 100%;
+    /* align-items: center; */
+}
+
+.div-info-fast-growing-sport{
+    width: 50%;
+}
+
+.main-text-info-fast-growing-sport{
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0;
+    max-width: 550px;
+    margin-bottom: 32px;
+}
+
+.ul-fast-growing{
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+.li-fast-gowing{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    margin-top: 0;
+    max-width: 630px;
+    margin-bottom: 20px;
+}
+
+.div-diagram-fast-growing-sport{
+    position: relative;
+    width: 50%;
+}
+
+.main-text-diagram-fast-growing-sport{
+    font-family: 'Cygre Medium';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.div-diagram-legend{
+    position: absolute;
+    top: 32px;
+    right: 23px;
+}
+
+.info-legend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.div-white-legend{
+    width: 20px;
+    height: 20px;
+    background: #F6F6F6;
+    margin-right: 11px;
+}
+
+.div-black-legend{
+    width: 20px;
+    height: 20px;
+    background: #282828;
+    margin-right: 11px;
+}
+
+.span-info-legend{
+    font-family: 'Cygre Book';
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 18px;
+    color: #282828;
+}
+
+.main-text-padel-avail{
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
+
+.div-row-padel-avail{
+    display: flex;
+    width: 100%;
+}
+
+.div-column-padel-avail{
+    align-items: center;
+    display: flex;
+    width: 50%;
+    background: #F6F6F6;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.div-column-padel-avail:last-child{
+    margin-right: 0;
+}
+
+.image-padel-avail{
+    height: 100%;
+    width: 50%;
+    max-width: 240px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.p-padel-avail{
+    width: 50%;
+    max-width: 345px;
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    margin: 120px 0  ;
+}
+
+.main-cort-prokennex{
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.div-content-cort-prokennex{
+    display: flex;
+    width: 100%;
+}
+
+.div-info-content-cort-prokennex{
+    width: 50%;
+    margin-right: 20px;
+}
+
+.div-image-cort-prokennex{
+    width: 50%;
+}
+
+.row-info-content-cort-prokennex{
+    width: 100%;
+    display: flex;
+    margin-bottom: 1px;
+    align-items: center;
+}
+
+.img-cort-prokennex{
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    /* max-height: 413px; */
+    object-fit: cover;
+}
+
+.numb-cort-prokennex{
+    background: #282828;
+    padding: 27px;
+}
+
+.span-numb-cort-prokennex{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.text-cort-prokennex{
+    background: #F6F6F6;
+    padding: 27px;
+    width: 100%;
+}
+
+.span-text-cort-prokennex{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+}
+
+.div-cort-prokennex-foot{
+    margin-top: -28px;
+    display: flex;
+    width: 100%;
+}
+
+.left-info-cort-prokennex-foot{
+    width: 50%;
+    margin-right: 20px;
+}
+
+.right-info-cort-prokennex-foot{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    background: #F6F6F6;
+}
+
+.iamge-cort-prokennex-foot{
+    width: 64px;
+}
+
+.p-cort-prokennex-foot{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    color: #282828;
+    max-width: 550px;
+    margin: 0;
+}
+
+.p-right-cort-prokennex-foot{
+    margin-left: 24px;
+    max-width: 500px;
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    margin: 0;
+    margin-left: 24px;
+}
+
+.h-div-model-corts{
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin-top: 120px;
+    margin-bottom: 32px;
+}
+
+.div-choice-model-corts{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #F6F6F6;
+}
+
+.choice-model-corts{
+    width: 33%;
+    text-align: center;
+}
+
+.choice-model-corts-active{
+    background: #282828;
+}
+
+.h-choice-model-corts{
+    font-family: 'Cygre Medium';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.choice-model-corts-active .h-choice-model-corts{
+    color: #FFFFFF;
+} 
+
+.btn-prokennex-foot{
+    width: 100%;
+}
+
+.div-model-corts-foot-first{
+    display: flex;
+}
+
+.container-model-corts-foot-first{
+    background: #F6F6F6;
+    padding: 44px;
+    margin-top: -36px;
+}
+
+.div-info-model-corts-foot{
+    margin-right: 24px;
+    width: 55%;
+}
+
+.div-image-model-corts-foot{
+    width: 45%;
+}
+
+.img-model-corts-foot{
+    object-fit: cover;
+    /* max-height: 386px; */
+    width: 100%;
+}
+
+.h-info-model-corts-foot{
+    font-family: 'Cygre Medium';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.h-info-model-corts-foot-blue{
+    color: #078ACB;
+    margin-bottom: 24px;
+}
+
+.p-info-h-info-model-corts-foot{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    margin: 0;
+}
+
+.h-model-corts-foot-second{
+    font-family: 'Cygre Medium';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.table-model-corts-foot-second{
+    background: #FFFFFF;
+    padding: 32px;
+}
+
+.row-table-model-corts-foot{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.row-table-model-corts-foot:last-child{
+    border: none;
+}
+
+.div-name-table-model-corts-foot{
+    width: 30%;
+}
+
+.div-description-table-model-corts-foot{
+    width: 70%;
+}
+
+.name-table-model-corts-foot{
+    font-family: 'Cygre Medium';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25.87px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.description-table-model-corts-foot{
+    font-family: 'Cygre Book';
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 18px;
+    color: #666666;
+    max-width: 730px;
+}
+
+.div-padel-cort-head{
+    display: flex;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.h-padel-cort-head{
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    width: 50%;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.p-padel-cort-head{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    width: 50%;
+    margin: 0;
+}
+
+.slider-padel-cort{
+    width: 100%;
+    max-height: 630px;
+}
+
+.img-slider-padel-cort{
+    width: 100%;
+    max-height: 630px;
+    object-fit: cover;
+}
+
+.div-text-padel-avail{
+    width: 50%;
+    margin-top: 79px;
+    margin-bottom: 119px;
+}
+
+.div-text-padel-avail .h-padel-avail{
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    width: 100%;
+    color: #282828;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.div-text-padel-avail .p-padel-avail{
+    width: 100%;
+    margin: 0;
+}
+
+.div-head-avail2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-padel-avail{
+    width: 100%;
+}
+
+.div-content-form{
+    display: flex;
+}
+
+.main-text-form{
+    width: 50%;
+    font-family: 'Cygre Medium';
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.div-form{
+    background: #F6F6F6;
+    padding: 40px;
+    width: 50%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-form{
+    background: #FFFFFF;
+    padding: 21px;
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    color: #888888;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.btn-form{
+    width: 100%;
+    margin-top: 0;
+}
+
+.p-form{
+    font-family: 'Cygre Book';
+    font-size: 16px;
+    font-weight: 350;
+    line-height: 18px;
+    color: #888888;
+    margin: 0;
+    margin-top: 20px;
+}
+
+/* INFO */
+.body-info{
+    background: #F6F6F6;
+}
+
+.container-info{
+    display: flex;
+}
+
+.div-sidebar-info{
+    width: 20%;
+}
+
+.h-sidebar-info{
+    font-family: 'Cygre Medium';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 33.5px;
+    margin-top: 44px;
+}
+
+.p-sidebar-info{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    color: #888888;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.div-content-info{
+    width: 80%;
+    background: #FFFFFF;
+    padding: 44px;
+}
+
+.h-content-info{
+    font-family: 'Cygre Medium';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.p-contrnt-info{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    margin: 0;
+}
+
+.p-content-info-m{
+    margin-bottom: 20px;
+}
+
+.ul-text-info{
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.ul-text-info .li-text-info {
+    position: relative;
+    padding-left: 12px; 
+}
+
+.ul-text-info .li-text-info::before {
+    content: "•"; 
+    position: absolute;
+    left: 0;
+    top: 11px;
+    transform: translateY(-50%);
+    font-size: 10px;
+}
+
+
+.li-text-info{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+}
+
+
+
+.panel {
+    display: none;
+    width: 100%;
+    justify-content: space-between;
+}
