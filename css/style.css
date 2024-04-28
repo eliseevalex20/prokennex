@@ -156,6 +156,14 @@ body, html {
     margin-right: 16px;
 }
 
+.basket-icon{
+    background-color: #008BCE;
+    padding: 22px;
+    height: 150%;
+    display: flex;
+    align-items: center;
+}
+
 /* .basket-icon{
     background: #008BCE;
 } */
@@ -219,13 +227,94 @@ body, html {
     bottom: 7%;
 }
 
+
+.div-slider.slider {
+    position: relative; 
+    width: 100%; 
+  }
+  
+.slide{
+    position: relative; 
+    width: 100%;
+  }
+  
+.slide-img {
+    width: 100%; 
+  }
+  
+.main-slider-content {
+    position: absolute; 
+    bottom: 85px;
+    left: 30%; 
+    width: 100%;  
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff; 
+}
+
+.main-text-slide{
+    font-family: 'Cygre SemiBold';
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+    margin: 0;
+}
+
+.subtext-slide{
+    font-family: 'Cygre Book';
+    font-size: 18px;
+    font-weight: 350;
+    line-height: 20px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.slick-dots {
+    position: absolute; 
+    bottom: 12px !important; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    list-style: none; 
+    text-align: center;
+    z-index: 1; 
+  }
+  
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px; 
+  }
+  
+.slick-dots li button {
+    font-size: 0; 
+    width: 12px !important; 
+    height: 12px !important; 
+    border-radius: 50%; 
+    background-color: #fff; 
+    border: 2px solid #FFFFFF; 
+    cursor: pointer; 
+  }
+  
+.slick-dots li.slick-active button {
+    background-color: #FFFFFF; 
+  }
+
+.slick-dots li.slick-active button:before{
+    color: #FFFFFF !important;
+    width: 12px !important;
+    height: 12px !important ;
+}
+
+.slick-dots li button:before{
+    width: 12px !important;
+    height: 12px !important;
+    line-height: 12px !important;
+    color: #FFFFFF !important;
+}
+
 .div-slide{
     width: 100%;
 }
 
-.slide-img{
-    width: 100%;
-}
 
 .slider-popular-products{
     display: flex;

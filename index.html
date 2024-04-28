@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 </head>
 <body>
 
@@ -71,7 +73,7 @@
             </a>
             <a href="#" class="basket-icon">
                 <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 0C8.61034 0.00165801 7.27806 0.58076 6.29542 1.61026C5.31279 2.63976 4.76005 4.03559 4.75846 5.49153V7.32203H0L2.51384 24H17.4862L20 7.32203H15.2415V5.49153C15.24 4.03559 14.6872 2.63976 13.7046 1.61026C12.7219 0.58076 11.3897 0.00165801 10 0ZM5.92325 5.49153C5.92325 4.35874 6.35276 3.27234 7.1173 2.47134C7.88184 1.67034 8.91878 1.22034 10 1.22034C11.0812 1.22034 12.1182 1.67034 12.8827 2.47134C13.6472 3.27234 14.0768 4.35874 14.0768 5.49153V7.32203H5.92325V5.49153ZM18.6366 8.54237L16.4913 22.7797H3.50872L1.36342 8.54237H4.75846V11.1864H5.92325V8.54237H14.0768V11.1864H15.2415V8.54237H18.6366Z" fill="black"/>
+                    <path d="M10 0C8.61034 0.00165801 7.27806 0.58076 6.29542 1.61026C5.31279 2.63976 4.76005 4.03559 4.75846 5.49153V7.32203H0L2.51384 24H17.4862L20 7.32203H15.2415V5.49153C15.24 4.03559 14.6872 2.63976 13.7046 1.61026C12.7219 0.58076 11.3897 0.00165801 10 0ZM5.92325 5.49153C5.92325 4.35874 6.35276 3.27234 7.1173 2.47134C7.88184 1.67034 8.91878 1.22034 10 1.22034C11.0812 1.22034 12.1182 1.67034 12.8827 2.47134C13.6472 3.27234 14.0768 4.35874 14.0768 5.49153V7.32203H5.92325V5.49153ZM18.6366 8.54237L16.4913 22.7797H3.50872L1.36342 8.54237H4.75846V11.1864H5.92325V8.54237H14.0768V11.1864H15.2415V8.54237H18.6366Z" fill="white"/>
                 </svg>  
             </a>
         </div>
@@ -112,21 +114,25 @@
 
     <!-- div-slider -->
     <div class="container">
-        <div class="div-slider">
+        <div class="div-slider slider">
             <div class="slide">
                 <img class="slide-img" src="images/slide.jpeg" alt="Slide 1">
-                <p class="main-text-slide">XPLOSIVE REACTION</p>
-                <p class="subtext-slide">Q+PLUS 5 доступна для заказа</p>
-                <button class="btn-slide">подробнее</button>
-                
+                <div class="main-slider-content">
+                    <p class="main-text-slide">XPLOSIVE REACTION</p>
+                    <p class="subtext-slide">Q+PLUS 5 доступна для заказа</p>
+                    <button class="btn-slide btn-primary">подробнее</button>
+                </div>
             </div>
-            <!-- <div class="slide">
+            <div class="slide">
                 <img class="slide-img" src="images/slide.jpeg" alt="Slide 2">
-                <p class="main-text-slide">XPLOSIVE REACTION</p>
-                <p class="subtext-slide">Q+PLUS 5 доступна для заказа</p>
-                <button class="btn-slide">подробнее</button>
-            </div> -->
+                <div class="main-slider-content">
+                    <p class="main-text-slide">XPLOSIVE REACTION</p>
+                    <p class="subtext-slide">Q+PLUS 5 доступна для заказа</p>
+                    <button class="btn-slide btn-primary">подробнее</button>
+                </div>
+            </div>
         </div>
+        
     </div>
 
     <!-- div-popular-products -->
@@ -289,6 +295,10 @@
             <p class="links-docs-footer"><a href="#" class="link-footer">Cookies</a></p>
         </div>
     </footer>
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
