@@ -49,13 +49,13 @@
         </div>
         <nav class="navigaion">
             <ul class="header-ul">
-                <li class="header-li"><a href="index.html">Главная</a></li>
+                <li class="header-li"><a class="nav-link" href="index.html">Главная</a></li>
                 <li class="header-li">
-                    <a href="shop.html" class="accordion">Магазин</a>
+                    <a href="shop.html" class="accordion nav-link">Магазин</a>
                 </li>
-                <li class="header-li"><a href="technologies.html">Технологии</a></li>
-                <li class="header-li"><a href="construction.html">Строительство кортов</a></li>
-                <li class="header-li"><a href="information.html">Информация</a></li>
+                <li class="header-li"><a class="nav-link" href="technologies.html">Технологии</a></li>
+                <li class="header-li"><a class="nav-link" href="construction.html">Строительство кортов</a></li>
+                <li class="header-li"><a class="nav-link" href="information.html">Информация</a></li>
             </ul>
         </nav>
         <div class="icons">
@@ -85,7 +85,6 @@
         <img src="images/main_baner.jpg" alt="Main Baner" class="main-baner">
     </div>
     
-
     <!-- div-categories -->
     <div class="container">
         <div class="div-categories">
@@ -139,7 +138,37 @@
     <div class="container">
         <div class="div-popular-products">
             <h2 class="main-text-poplar-product">популярные товары</h2>
-            <div class="slider-popular-products">
+            <div class="slider-popular-products" >
+                <div class="card-popular-product">
+                    <img src="images/card1.jpeg" alt="Card1" class="img-card-popular-product">
+                    <p class="popular-category-name">Теннис</p>
+                    <p class="popular-product-name">Black Ace 105</p>
+                    <p class="popular-card-price">3800₽</p>
+                </div>
+                <div class="card-popular-product">
+                    <img src="images/card2.jpeg" alt="Card2" class="img-card-popular-product">
+                    <p class="popular-category-name">Теннис</p>
+                    <p class="popular-product-name">New Ki 10</p>
+                    <p class="popular-card-price">5800₽</p>
+                </div>
+                <div class="card-popular-product">
+                    <img src="images/card3.jpeg" alt="Card3" class="img-card-popular-product">
+                    <p class="popular-category-name">Теннис</p>
+                    <p class="popular-product-name">New Ki 15</p>
+                    <p class="popular-card-price">3800₽</p>
+                </div>
+                <div class="card-popular-product">
+                    <img src="images/card3.jpeg" alt="Card4" class="img-card-popular-product">
+                    <p class="popular-category-name">Теннис</p>
+                    <p class="popular-product-name">New Ki 15</p>
+                    <p class="popular-card-price">3800₽</p>
+                </div>
+                <div class="card-popular-product">
+                    <img src="images/card5.jpeg" alt="Card5" class="img-card-popular-product">
+                    <p class="popular-category-name">Теннис</p>
+                    <p class="popular-product-name">New Ki 5</p>
+                    <p class="popular-card-price">3800₽</p>
+                </div>
                 <div class="card-popular-product">
                     <img src="images/card1.jpeg" alt="Card1" class="img-card-popular-product">
                     <p class="popular-category-name">Теннис</p>
@@ -177,7 +206,10 @@
     <!-- div-production -->
     <div class="container">
         <div class="div-production">
-            <img src="images/production.png" alt="Production" class="img-production">
+            <div class="img-wrapper">
+                <img src="images/production.png" alt="Production" class="img-production">
+                <div class="overlay"></div> <!-- Добавляем div для затемнения -->
+            </div>
             <div class="content-production">
                 <h2 class="main-text-production">производство падел-кортов prokennex</h2>
                 <p class="subtext-production">Поставка и установка падел-кортов «под ключ»</p>
@@ -300,5 +332,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/sliders.js"></script>
 </body>
 </html>
