@@ -111,10 +111,20 @@ body, html {
 
 .header{
     display: flex;
-    padding: 22px 80px;
+    padding: 11.5px 80px;
     text-align: center;
     justify-content: space-between;
     background: #FFFFFF;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.navigaion{
+    display: flex;
+    align-items: center;
 }
 
 .hr-header{
@@ -146,6 +156,10 @@ body, html {
     margin-right: 20px;
 }
 
+.active-nav-link{
+    color: #282828 !important;
+}
+
 .icons{
     display: flex;
     align-items: center;
@@ -159,7 +173,7 @@ body, html {
 .basket-icon{
     background-color: #008BCE;
     padding: 22px;
-    height: 150%;
+    height: 70%;
     display: flex;
     align-items: center;
 }
@@ -315,12 +329,65 @@ body, html {
     width: 100%;
 }
 
+.div-popular-products{
+    margin-bottom: 160px;
+}
 
 .slider-popular-products{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.slider-popular-products .slick-next, .slick-prev{
+    background: #F6F6F6 !important;
+
+}
+
+.slider-popular-products .slick-next{
+    right: 0;
+    top: 125%;
+    width: 60px;
+    height: 60px;
+}
+
+.slider-popular-products .slick-prev{
+    left: 0;
+    top: 125%;
+    width: 60px;
+    height: 60px;
+}
+
+.slider-popular-products .slick-next::before{
+    content: url("data:image/svg+xml,%3Csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.9707 0.0322266L9.53564 1.42523L17.1426 9.03223H0.970703V11.0322H17.1426L9.55664 18.6182L10.9707 20.0322C14.6317 16.3712 17.4667 13.5362 20.9707 10.0322C17.0047 6.06623 19.8047 8.86623 10.9707 0.0322266Z' fill='%23282828'/%3E%3C/svg%3E");
+    color: transparent !important;
+}
+
+.slider-popular-products .slick-prev::before {
+    content: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10 20L11.4351 18.607L3.82813 11L20 11V9L3.82813 9L11.4141 1.414L10 0C6.339 3.661 3.504 6.496 0 10C3.966 13.966 1.166 11.166 10 20Z' fill='%23282828'/%3E%3C/svg%3E");
+    color: transparent !important;
+}
+
+.slider-popular-products ul{
+    top: 120%;
+}
+
+.slider-popular-products ul li.slick-active button{
+    background: #000;
+}
+
+.slider-popular-products ul li button{
+    background: #F6F6F6;
+}
+
+
+.slider-popular-products ul li button::before{
+    opacity: 0;
+}
+
+.slider-popular-products ul li.slick-active button::before{
+    opacity: 0;
 }
 
 .card-popular-product{
@@ -383,11 +450,28 @@ body, html {
     width: 100%;
 }
 
+.img-wrapper {
+    position: relative;
+    width: 100%;
+    max-height: 570px;
+    overflow: hidden; 
+}
+
 .img-production{
     position: relative;
     width: 100%;
     max-height: 570px;
     object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(40, 40, 40, 0) 0%, rgba(40, 40, 40, 0.168) 35.71%, rgba(40, 40, 40, 0.8) 100%);
+    z-index: 1; 
 }
 
 .content-production {
@@ -396,6 +480,7 @@ body, html {
     /* left: 26%; */
     transform: translate(5%, -15%);
     max-width: 630px;
+    z-index: 2;
 }
 
 .main-text-production{
@@ -907,15 +992,16 @@ body, html {
     text-transform: uppercase;
 }
 
+
 .div-main-about-technologies{
     display: flex;
     width: 100%;
-    /* justify-content: space-between; */
+    justify-content: space-between;
 }
 
 .div-main-left-about-technologies{
-    width: 80%;
-    margin-right: 130px;
+    width: 70%;
+    /* margin-right: 130px; */
 }
 
 .div-left-about-technologies{
@@ -945,8 +1031,16 @@ body, html {
     width: 80%;
 }
 
+.container-technologies{
+    position: relative;
+}
+
 .div-right-main-about-technologies{
     width: 20%;
+    position: sticky;
+    height: fit-content;
+    top: 0;
+    right: 0;
 }
 
 .h-right-about-technologies{
@@ -955,7 +1049,7 @@ body, html {
     font-weight: 500;
     line-height: 24px;
     text-transform: uppercase;
-    margin-top: 0;
+    margin-top: 10px;
     margin-bottom: 16px;
 }
 
@@ -2378,10 +2472,15 @@ body, html {
     margin-bottom: 20px;
 }
 
+.container-info #about {
+    display: block;
+}
+
 .div-content-info{
     width: 80%;
     background: #FFFFFF;
     padding: 44px;
+    display: none;
 }
 
 .h-content-info{
@@ -2391,7 +2490,23 @@ body, html {
     line-height: 24px;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
+}
+
+.h-sub-content-info{
+    font-family: 'Cygre Medium';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 0;
+}
+
+.hr-content-info{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    /* color: #F6F6F6; */
+    border-width: 1px;
+    border: 1px solid #F6F6F6;
 }
 
 .p-contrnt-info{
