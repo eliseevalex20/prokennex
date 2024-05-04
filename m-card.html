@@ -5,21 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 </head>
-<script>
-    // JavaScript для определения типа устройства и перенаправления
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        window.location.href = 'm-index.html'; // Перенаправление на m-index.html
-    }
-</script>
 <body>
 
-    <!-- Header -->
     <header class="header">
         <div class="logo">
-            <svg width="240" height="48" viewBox="0 0 240 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="163" height="35" viewBox="0 0 240 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_291_241)">
                 <mask id="mask0_291_241" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-312" y="-586" width="863" height="1219">
                 <path d="M550.447 -585.911H-311.252V632.769H550.447V-585.911Z" fill="white"/>
@@ -53,7 +44,9 @@
                 </defs>
             </svg>                
         </div>
-        <nav class="navigaion">
+
+        <!-- navigaion -->
+        <nav class="navigaion" style="display: none;">
             <ul class="header-ul">
                 <li class="header-li"><a class="nav-link" href="index.html">Главная</a></li>
                 <li class="header-li">
@@ -64,245 +57,209 @@
                 <li class="header-li"><a class="nav-link" href="information.html">Информация</a></li>
             </ul>
         </nav>
+
+
         <div class="icons">
-            <a href="#" class="search-icon">
+            <!-- <a href="#" class="search-icon">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M15.9972 18.0275C14.2976 19.2824 19.5826 13.8915 18.0787 15.9407C18.1163 15.9377 18.0466 16.0514 17.8128 16.3362C17.8128 16.3362 21.8292 20.3155 23.8008 22.3407C24.4853 23.079 23.2503 24.5526 22.4113 23.7832C20.6259 22.0554 16.4012 17.7612 16.3946 17.7542L15.9972 18.0275Z" fill="#282828"/>
                     <path d="M10.0953 20.0397C12.6796 20.0147 15.2378 18.947 17.0774 17.1335C19.2623 14.9797 20.3873 11.7933 19.9949 8.75097C19.3225 3.53783 15.026 0 10.0311 0C6.23589 0 2.54761 2.36806 0.929785 5.80178C-0.308674 8.43062 -0.311183 11.6046 0.929785 14.2379C2.53607 17.6476 6.16413 20.0031 9.96632 20.0397C10.0095 20.0397 10.0526 20.0397 10.0953 20.0397ZM9.97686 18.3694C6.11746 18.3323 2.5165 15.3551 1.80042 11.538C1.2956 8.84707 2.24853 5.93492 4.23368 4.02386C6.55102 1.79194 10.1936 1.04463 13.2225 2.3095C15.9323 3.44122 17.9606 6.06907 18.3344 8.9642C18.6546 11.4459 17.7619 14.0467 16.0076 15.8381C14.4685 17.4098 12.3103 18.3479 10.0847 18.3694C10.0486 18.3694 10.013 18.3694 9.97686 18.3694Z" fill="#282828"/>
                 </svg>
-            </a>
+            </a> -->
             <a href="#" class="avatar-icon">
-                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16 16.8746C19.4518 16.8746 22.25 13.9925 22.25 10.4373C22.25 6.88207 19.4518 4 16 4C12.5482 4 9.75 6.88207 9.75 10.4373C9.75 13.9925 12.5482 16.8746 16 16.8746Z" stroke="#282828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M11 20.2754H21C22.3261 20.2754 23.5979 20.818 24.5355 21.7837C25.4732 22.7495 26 24.0594 26 25.4252V28.0001H6V25.4252C6 24.0594 6.52679 22.7495 7.46447 21.7837C8.40215 20.818 9.67392 20.2754 11 20.2754Z" stroke="#282828" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>                    
+                <svg width="26" height="27" viewBox="0 0 26 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.4291 14.213C15.585 14.213 18.1434 11.4307 18.1434 7.99866C18.1434 4.5666 15.585 1.78436 12.4291 1.78436C9.27322 1.78436 6.71484 4.5666 6.71484 7.99866C6.71484 11.4307 9.27322 14.213 12.4291 14.213Z" fill="#008BCE" stroke="#008BCE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M7 18.7331H19C20.5913 18.7331 22.1174 19.2093 23.2426 20.0568C24.3679 20.9044 25 22.0539 25 23.2526V25.5123H1V23.2526C1 22.0539 1.63214 20.9044 2.75736 20.0568C3.88258 19.2093 5.4087 18.7331 7 18.7331Z" fill="#008BCE" stroke="#008BCE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                
             </a>
             <a href="#" class="basket-icon">
-                <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 0C8.61034 0.00165801 7.27806 0.58076 6.29542 1.61026C5.31279 2.63976 4.76005 4.03559 4.75846 5.49153V7.32203H0L2.51384 24H17.4862L20 7.32203H15.2415V5.49153C15.24 4.03559 14.6872 2.63976 13.7046 1.61026C12.7219 0.58076 11.3897 0.00165801 10 0ZM5.92325 5.49153C5.92325 4.35874 6.35276 3.27234 7.1173 2.47134C7.88184 1.67034 8.91878 1.22034 10 1.22034C11.0812 1.22034 12.1182 1.67034 12.8827 2.47134C13.6472 3.27234 14.0768 4.35874 14.0768 5.49153V7.32203H5.92325V5.49153ZM18.6366 8.54237L16.4913 22.7797H3.50872L1.36342 8.54237H4.75846V11.1864H5.92325V8.54237H14.0768V11.1864H15.2415V8.54237H18.6366Z" fill="white"/>
-                </svg>  
+                <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.9602 16.6022H8.39095C8.1824 16.6025 7.97992 16.5345 7.8168 16.4093C7.65367 16.2841 7.53959 16.1092 7.49329 15.9133L5.37687 7.03149C5.34591 6.90175 5.34573 6.76695 5.37633 6.63713C5.40693 6.5073 5.46753 6.3858 5.55363 6.28166C5.63972 6.17752 5.74908 6.09342 5.87358 6.03562C5.99807 5.97782 6.1345 5.94781 6.2727 5.94782H23.0784C23.2168 5.94754 23.3534 5.97736 23.4781 6.03504C23.6029 6.09272 23.7125 6.17679 23.7987 6.28097C23.885 6.38514 23.9458 6.50674 23.9765 6.63669C24.0072 6.76665 24.0071 6.9016 23.9761 7.03149L21.856 15.9133C21.8098 16.1089 21.6959 16.2836 21.5332 16.4087C21.3704 16.5339 21.1684 16.6021 20.9602 16.6022ZM9.12257 14.8314H20.2285L21.924 7.72029H7.4265L9.12257 14.8314Z" fill="white"/>
+                    <path d="M10.19 24.512C9.49342 24.512 8.81247 24.3131 8.23327 23.9403C7.65408 23.5675 7.20265 23.0376 6.93607 22.4177C6.66949 21.7977 6.59975 21.1156 6.73565 20.4575C6.87154 19.7994 7.20699 19.1948 7.69955 18.7204C8.19212 18.2459 8.81969 17.9228 9.5029 17.7919C10.1861 17.661 10.8943 17.7282 11.5378 17.9849C12.1814 18.2417 12.7315 18.6766 13.1185 19.2345C13.5055 19.7924 13.7121 20.4483 13.7121 21.1194C13.7111 22.0189 13.3397 22.8813 12.6794 23.5173C12.0191 24.1533 11.1238 24.5111 10.19 24.512ZM10.19 19.498C9.85696 19.498 9.53139 19.5931 9.25447 19.7714C8.97756 19.9496 8.76174 20.203 8.63431 20.4994C8.50689 20.7958 8.47358 21.1219 8.5386 21.4366C8.60362 21.7512 8.76405 22.0402 8.9996 22.2671C9.23514 22.4939 9.53523 22.6483 9.8619 22.7108C10.1886 22.7733 10.5271 22.7411 10.8348 22.6183C11.1425 22.4954 11.4054 22.2874 11.5904 22.0206C11.7753 21.7538 11.874 21.4402 11.8738 21.1194C11.8733 20.6894 11.6958 20.2772 11.3801 19.9732C11.0644 19.6692 10.6364 19.4983 10.19 19.498Z" fill="white"/>
+                    <path d="M19.1588 24.512C18.4622 24.512 17.7812 24.3131 17.202 23.9403C16.6228 23.5675 16.1714 23.0376 15.9048 22.4177C15.6382 21.7977 15.5685 21.1156 15.7044 20.4575C15.8403 19.7994 16.1757 19.1948 16.6683 18.7204C17.1609 18.2459 17.7884 17.9228 18.4716 17.7919C19.1549 17.661 19.863 17.7282 20.5066 17.9849C21.1502 18.2417 21.7002 18.6766 22.0872 19.2345C22.4742 19.7924 22.6808 20.4483 22.6808 21.1194C22.6798 22.0189 22.3085 22.8813 21.6482 23.5173C20.9879 24.1533 20.0926 24.5111 19.1588 24.512ZM19.1588 19.498C18.8257 19.498 18.5001 19.5931 18.2232 19.7714C17.9463 19.9496 17.7305 20.203 17.6031 20.4994C17.4756 20.7958 17.4423 21.1219 17.5073 21.4366C17.5724 21.7512 17.7328 22.0402 17.9683 22.2671C18.2039 22.4939 18.504 22.6483 18.8306 22.7108C19.1573 22.7733 19.4959 22.7411 19.8036 22.6183C20.1112 22.4954 20.3742 22.2874 20.5591 22.0206C20.7441 21.7538 20.8427 21.4402 20.8426 21.1194C20.8421 20.6894 20.6645 20.2772 20.3488 19.9732C20.0331 19.6692 19.6051 19.4983 19.1588 19.498Z" fill="white"/>
+                    <path d="M6.27326 7.71891C6.08034 7.7189 5.8923 7.6604 5.73581 7.55171C5.57932 7.44302 5.4623 7.28965 5.40133 7.11333L3.82597 2.55495H0.919115C0.67535 2.55495 0.44157 2.46167 0.269202 2.29563C0.096835 2.1296 0 1.9044 0 1.66959C0 1.43478 0.096835 1.20959 0.269202 1.04355C0.44157 0.877519 0.67535 0.784241 0.919115 0.784241H4.49141C4.68434 0.784258 4.87237 0.842755 5.02886 0.951444C5.18536 1.06013 5.30238 1.2135 5.36334 1.38982L7.14826 6.55379C7.19427 6.68686 7.20681 6.82856 7.18482 6.96722C7.16284 7.10587 7.10698 7.23751 7.02183 7.35129C6.93668 7.46507 6.82469 7.55773 6.69507 7.62165C6.56546 7.68556 6.42194 7.7189 6.27633 7.71891H6.27326Z" fill="white"/>
+                </svg>   
             </a>
         </div>
         
     </header>
+    <hr class="hr-header">
 
-    <!-- main-image -->
-    <div class="main-image">
-        <img src="images/main_baner.jpg" alt="Main Baner" class="main-baner">
+    <!-- div-cells -->
+    <div class="container container-cells">
+        <div class="div-cells">
+            <a href="index.html" class="link-cells">Главная</a>
+            <span class="link-cells">-</span>
+            <a href="shop.html" class="link-cells">Магазин</a>
+        </div>
     </div>
 
-    <!-- div-categories -->
-    <div class="container">
-        <div class="div-categories">
-            <div class="div-category">
-                <img src="images/category1.jpeg" alt="Category" class="img-category">
-                <p class="name-category">Теннис</p>
-                <button class="btn-primary btn-category">подробнее</button>
+    <div class="vrem">
+        <a href="index.html">Главная</a>
+        <a href="shop.html">Магазин</a>
+        <a href="card.html">Карточка</a>
+        <a href="technologies.html">Технологии</a>
+        <a href="construction.html">Строительство</a>
+        <a href="information.html">Информация</a>
+    </div>
+
+    <!-- main-card-information -->
+    <div class="container container-card-information">
+        <div class="main-card-information">
+            <div class="div-slider-card-image">
+                <img src="images/card1.jpeg" alt="Card1" class="slide-card-image">
             </div>
-            <div class="div-category">
-                <img src="images/category2.jpeg" alt="Category" class="img-category">
-                <p class="name-category">Пиклбол</p>
-                <button class="btn-primary btn-category">подробнее</button>
+            <div class="div-card-description">
+                <h2 class="main-card-description">Black Ace 105</h2>
+                <hr class="hr-card-description">
+                <div class="div-p-card-description">
+                    <p class="p-card-description">Геометрия и конкурентные характеристики аналогичны характеристикам Black Ace с увеличенной до 105 кв. дюймов струнной выносливости! Это Balck Ace 105 - смертоносное оружие с отличной реактивностью и мощным ударом по мячу. Black Ace 105 — идеальная ракетка для тех, кто любит агрессивную игру в нападении и защите с хорошей глубиной мяча.</p>
+                    <p class="p-card-description">Кинетическая система внутри головки увеличивает мощность, устойчивость струн и комфорт. Кинетическая демпфирующая камера значительно снижает усталость рук.</p>
+                </div>
+                <p class="p-card-handle">Ручка:</p>
+                <div class="div-choice-handle">
+                    <button class="btn-choice-handle">2</button>
+                    <button class="btn-choice-handle">3</button>
+                    <button class="btn-choice-handle">4</button>
+                </div>
+                <div class="div-price-busket">
+                    <span class="span-price-description" style="display: none;">10 270 ₽</span>
+                    <button class="btn-in-basket">В КОРЗИНУ</button>
+                </div>
             </div>
-            <div class="div-category">
-                <img src="images/category3.jpeg" alt="Category" class="img-category">
-                <p class="name-category">падел</p>
-                <button class="btn-primary btn-category">подробнее</button>
+        </div>
+    </div>
+
+    <!-- div-specifications -->
+    <div class="container container-card-information">
+        <div class="div-specifications">
+            <div class="div-buttons-features">
+                <button class="btn-features btn-features-active">Технические особенности</button>
+                <button class="btn-features">Technologies</button>
             </div>
-            <div class="div-category">
-                <img src="images/category4.jpeg" alt="Category" class="img-category">
-                <p class="name-category">Бадминтон</p>
-                <button class="btn-primary btn-category">подробнее</button>
+            <div class="div-technical-technologies">
+                <div class="div-names-parametr-technical-technologies">
+                    <div class="div-names-technical-technologies">
+                        <span class="name-technical-technologies">Длина ракетки</span>
+                    </div>
+                    <div class="div-parametrs-technical-technologies">
+                        <span class="parametr-technical-technologies">27,25</span>
+                    </div>
+                </div>
+                <div class="div-names-parametr-technical-technologies">
+                    <div class="div-names-technical-technologies">
+                        <span class="name-technical-technologies">толщина обода</span>
+                    </div>
+                    <div class="div-parametrs-technical-technologies">
+                        <span class="parametr-technical-technologies">21 мм</span>
+                    </div>
+                </div>
+                <div class="div-names-parametr-technical-technologies">
+                    <div class="div-names-technical-technologies">
+                        <span class="name-technical-technologies">вес</span>
+                    </div>
+                    <div class="div-parametrs-technical-technologies">
+                        <span class="parametr-technical-technologies">300 гр</span>
+                    </div>
+                </div>
+                <div class="div-names-parametr-technical-technologies">
+                    <div class="div-names-technical-technologies">
+                        <span class="name-technical-technologies">Баланс</span>
+                    </div>
+                    <div class="div-parametrs-technical-technologies">
+                        <span class="parametr-technical-technologies">320 мм</span>
+                    </div>
+                </div>
+                <div class="div-names-parametr-technical-technologies">
+                    <div class="div-names-technical-technologies">
+                        <span class="name-technical-technologies">Жесткость</span>
+                    </div>
+                    <div class="div-parametrs-technical-technologies">
+                        <span class="parametr-technical-technologies">65 RA</span>
+                    </div>
+                </div>
+                <div class="div-names-parametr-technical-technologies">
+                    <div class="div-names-technical-technologies">
+                        <span class="name-technical-technologies">Струнная формула</span>
+                    </div>
+                    <div class="div-parametrs-technical-technologies">
+                        <span class="parametr-technical-technologies">16 x 19</span>
+                    </div>
+                </div>
+                <div class="div-names-parametr-technical-technologies">
+                    <div class="div-names-technical-technologies">
+                        <span class="name-technical-technologies">материал</span>
+                    </div>
+                    <div class="div-parametrs-technical-technologies">
+                        <span class="parametr-technical-technologies">Графит</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- div-slider -->
-    <div class="container">
-        <div class="div-slider slider">
-            <div class="slide">
-                <img class="slide-img" src="images/slide.jpeg" alt="Slide 1">
-                <div class="main-slider-content">
-                    <p class="main-text-slide">XPLOSIVE REACTION</p>
-                    <p class="subtext-slide">Q+PLUS 5 доступна для заказа</p>
-                    <button class="btn-slide btn-primary">подробнее</button>
-                </div>
-            </div>
-            <div class="slide">
-                <img class="slide-img" src="images/slide.jpeg" alt="Slide 2">
-                <div class="main-slider-content">
-                    <p class="main-text-slide">XPLOSIVE REACTION</p>
-                    <p class="subtext-slide">Q+PLUS 5 доступна для заказа</p>
-                    <button class="btn-slide btn-primary">подробнее</button>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-
-    <!-- div-popular-products -->
-    <div class="container">
-        <div class="div-popular-products">
-            <h2 class="main-text-poplar-product">популярные товары</h2>
-            <div class="slider-popular-products" >
-                <div class="card-popular-product">
-                    <img src="images/card1.jpeg" alt="Card1" class="img-card-popular-product">
+    <!-- with-product -->
+    <div class="container container-card-information">
+        <div class="with-product">
+            <h2 class="main-text-with-product">с этим товаром обычно заказывают:</h2>
+            <div class="row-shop-content">
+                <div class="card-shop">
+                    <a href="card.html"><img src="images/card1.jpeg" alt="Card-shop" class="img-card-shop"></a>
                     <p class="popular-category-name">Теннис</p>
                     <p class="popular-product-name">Black Ace 105</p>
                     <p class="popular-card-price">3800₽</p>
                 </div>
-                <div class="card-popular-product">
-                    <img src="images/card2.jpeg" alt="Card2" class="img-card-popular-product">
+                <div class="card-shop">
+                    <img src="images/card2.jpeg" alt="Card-shop" class="img-card-shop">
                     <p class="popular-category-name">Теннис</p>
                     <p class="popular-product-name">New Ki 10</p>
                     <p class="popular-card-price">5800₽</p>
                 </div>
-                <div class="card-popular-product">
-                    <img src="images/card3.jpeg" alt="Card3" class="img-card-popular-product">
-                    <p class="popular-category-name">Теннис</p>
-                    <p class="popular-product-name">New Ki 15</p>
-                    <p class="popular-card-price">3800₽</p>
-                </div>
-                <div class="card-popular-product">
-                    <img src="images/card3.jpeg" alt="Card4" class="img-card-popular-product">
-                    <p class="popular-category-name">Теннис</p>
-                    <p class="popular-product-name">New Ki 15</p>
-                    <p class="popular-card-price">3800₽</p>
-                </div>
-                <div class="card-popular-product">
-                    <img src="images/card5.jpeg" alt="Card5" class="img-card-popular-product">
-                    <p class="popular-category-name">Теннис</p>
-                    <p class="popular-product-name">New Ki 5</p>
-                    <p class="popular-card-price">3800₽</p>
-                </div>
-                <div class="card-popular-product">
-                    <img src="images/card1.jpeg" alt="Card1" class="img-card-popular-product">
+            </div>
+            <!-- <div class="row-shop-content">
+                <div class="card-shop">
+                    <img src="images/card1.jpeg" alt="Card-shop" class="img-card-shop">
                     <p class="popular-category-name">Теннис</p>
                     <p class="popular-product-name">Black Ace 105</p>
                     <p class="popular-card-price">3800₽</p>
                 </div>
-                <div class="card-popular-product">
-                    <img src="images/card2.jpeg" alt="Card2" class="img-card-popular-product">
+            </div> -->
+        </div>
+    </div>
+
+    <!-- same-this-product -->
+    <div class="container container-card-information">
+        <div class="same-this-product">
+            <h2 class="main-text-same-this-product">похожие товары:</h2>
+            <div class="row-shop-content">
+                <div class="card-shop">
+                    <a href="card.html"><img src="images/card1.jpeg" alt="Card-shop" class="img-card-shop"></a>
+                    <p class="popular-category-name">Теннис</p>
+                    <p class="popular-product-name">Black Ace 105</p>
+                    <p class="popular-card-price">3800₽</p>
+                </div>
+                <div class="card-shop">
+                    <img src="images/card2.jpeg" alt="Card-shop" class="img-card-shop">
                     <p class="popular-category-name">Теннис</p>
                     <p class="popular-product-name">New Ki 10</p>
                     <p class="popular-card-price">5800₽</p>
                 </div>
-                <div class="card-popular-product">
-                    <img src="images/card3.jpeg" alt="Card3" class="img-card-popular-product">
+            </div>
+            <!-- <div class="row-shop-content">
+                <div class="card-shop">
+                    <img src="images/card1.jpeg" alt="Card-shop" class="img-card-shop">
                     <p class="popular-category-name">Теннис</p>
-                    <p class="popular-product-name">New Ki 15</p>
+                    <p class="popular-product-name">Black Ace 105</p>
                     <p class="popular-card-price">3800₽</p>
                 </div>
-                <div class="card-popular-product">
-                    <img src="images/card3.jpeg" alt="Card4" class="img-card-popular-product">
-                    <p class="popular-category-name">Теннис</p>
-                    <p class="popular-product-name">New Ki 15</p>
-                    <p class="popular-card-price">3800₽</p>
-                </div>
-                <div class="card-popular-product">
-                    <img src="images/card5.jpeg" alt="Card5" class="img-card-popular-product">
-                    <p class="popular-category-name">Теннис</p>
-                    <p class="popular-product-name">New Ki 5</p>
-                    <p class="popular-card-price">3800₽</p>
-                </div>
-            </div>
-        </div>
-    </div>    
-
-    <!-- div-production -->
-    <div class="container">
-        <div class="div-production">
-            <div class="img-wrapper">
-                <img src="images/production.png" alt="Production" class="img-production">
-                <div class="overlay"></div> <!-- Добавляем div для затемнения -->
-            </div>
-            <div class="content-production">
-                <h2 class="main-text-production">производство падел-кортов prokennex</h2>
-                <p class="subtext-production">Поставка и установка падел-кортов «под ключ»</p>
-                <button class="btn-primary btn-production">подробнее</button>
-            </div>
-        </div>
-    </div>    
-
-    <!-- div-technologies -->
-    <div class="container">
-        <div class="div-technologies">
-            <div class="div-left-technologies">
-                <svg width="32" height="26" viewBox="0 0 32 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 14.56V0H32V14.768C32 24.752 23 26 23 26L21.8 23.088C21.8 23.088 25.8 22.464 26.6 19.136C27.4 16.64 25.8 14.56 25.8 14.56H18Z" fill="white"/>
-                    <path d="M0 14.56V0H14V14.768C14 24.752 5 26 5 26L3.8 23.088C3.8 23.088 7.8 22.464 8.6 19.136C9.4 16.64 7.8 14.56 7.8 14.56H0Z" fill="white"/>
-                </svg>
-                                      
-                <p class="subtext-technologies">
-                    Давайте вдохновимся эволюцией, <br>
-                    давайте выйдем за рамки современного искусства, <br>
-                    мы используем новые технологии для улучшения <br>
-                    самого важного: Представления.
-                </p>
-                <p class="p-name-owner">Ing. Kunnan</p>
-                <p class="p-subname-owner">Основатель ProKennex</p>
-                <button class="btn-primary btn-technologies">о наших технологиях</button>
-            </div>
-            <div class="div-right-technologies">
-                <img src="images/right-technologies.jpg" alt="Right technologies" class="img-right-technologies">
-            </div>
-        </div>
-    </div>
-
-    <!-- div-social-media -->
-    <div class="container">
-        <div class="div-social-media">
-            <h2 class="main-text-social-media">Подпишитесь на нас в социальных сетях</h2>
-            <div class="div-images-social-media">
-                <img src="images/social-media1.jpeg" alt="Social media 1" class="img-social-media">
-                <img src="images/social-media2.jpeg" alt="Social media 2" class="img-social-media">
-                <img src="images/social-media3.jpeg" alt="Social media 3" class="img-social-media">
-                <img src="images/social-media4.jpeg" alt="Social media 4" class="img-social-media">
-                <img src="images/social-media5.jpeg" alt="Social media 5" class="img-social-media">
-            </div>
-            <div class="div-icons-social-media">
-                <svg class="icon-social-media" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_456_108)">
-                    <path d="M7.7 44L36.3 44C40.5526 44 44 40.5526 44 36.3L44 7.7C44 3.44741 40.5526 0 36.3 0L7.7 0C3.44741 0 0 3.44741 0 7.7L0 36.3C0 40.5526 3.44741 44 7.7 44Z" fill="url(#paint0_radial_456_108)"/>
-                    <path d="M30.25 38.5H13.75C11.562 38.5 9.46354 37.6308 7.91637 36.0836C6.36919 34.5365 5.5 32.438 5.5 30.25V13.75C5.5 11.562 6.36919 9.46354 7.91637 7.91637C9.46354 6.36919 11.562 5.5 13.75 5.5H30.25C32.438 5.5 34.5365 6.36919 36.0836 7.91637C37.6308 9.46354 38.5 11.562 38.5 13.75V30.25C38.5 32.438 37.6308 34.5365 36.0836 36.0836C34.5365 37.6308 32.438 38.5 30.25 38.5ZM13.75 8.8C12.4377 8.80182 11.1797 9.32392 10.2518 10.2518C9.32392 11.1797 8.80182 12.4377 8.8 13.75V30.25C8.80182 31.5623 9.32392 32.8203 10.2518 33.7482C11.1797 34.6761 12.4377 35.1982 13.75 35.2H30.25C31.5623 35.1982 32.8203 34.6761 33.7482 33.7482C34.6761 32.8203 35.1982 31.5623 35.2 30.25V13.75C35.1982 12.4377 34.6761 11.1797 33.7482 10.2518C32.8203 9.32392 31.5623 8.80182 30.25 8.8H13.75Z" fill="white"/>
-                    <path d="M22.0004 31.3504C20.1511 31.3504 18.3434 30.802 16.8058 29.7746C15.2682 28.7472 14.0698 27.287 13.3621 25.5785C12.6544 23.87 12.4693 21.99 12.8301 20.1763C13.1908 18.3626 14.0813 16.6966 15.3889 15.3889C16.6966 14.0813 18.3626 13.1908 20.1763 12.8301C21.99 12.4693 23.87 12.6544 25.5785 13.3621C27.287 14.0698 28.7472 15.2682 29.7746 16.8058C30.802 18.3434 31.3504 20.1511 31.3504 22.0004C31.3486 24.4796 30.3629 26.8568 28.6098 28.6098C26.8568 30.3629 24.4796 31.3486 22.0004 31.3504ZM22.0004 15.9504C20.8038 15.9504 19.6341 16.3052 18.6392 16.97C17.6443 17.6348 16.8688 18.5797 16.4109 19.6852C15.953 20.7907 15.8332 22.0071 16.0666 23.1807C16.3001 24.3543 16.8763 25.4323 17.7224 26.2784C18.5685 27.1245 19.6465 27.7007 20.8201 27.9341C21.9937 28.1676 23.2101 28.0478 24.3156 27.5899C25.4211 27.132 26.366 26.3565 27.0308 25.3616C27.6956 24.3667 28.0504 23.197 28.0504 22.0004C28.0486 20.3964 27.4106 18.8586 26.2764 17.7244C25.1422 16.5902 23.6044 15.9522 22.0004 15.9504Z" fill="white"/>
-                    <path d="M31.3492 14.8508C32.2605 14.8508 32.9992 14.1121 32.9992 13.2008C32.9992 12.2895 32.2605 11.5508 31.3492 11.5508C30.4379 11.5508 29.6992 12.2895 29.6992 13.2008C29.6992 14.1121 30.4379 14.8508 31.3492 14.8508Z" fill="white"/>
-                    </g>
-                    <defs>
-                    <radialGradient id="paint0_radial_456_108" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-0.885154 43.1062) rotate(180) scale(101.609)">
-                    <stop stop-color="#F9ED32"/>
-                    <stop offset="0.36" stop-color="#EE2A7B"/>
-                    <stop offset="0.44" stop-color="#D22A8A"/>
-                    <stop offset="0.6" stop-color="#8B2AB2"/>
-                    <stop offset="0.83" stop-color="#1B2AF0"/>
-                    <stop offset="0.88" stop-color="#002AFF"/>
-                    </radialGradient>
-                    <clipPath id="clip0_456_108">
-                    <rect width="44" height="44" fill="white"/>
-                    </clipPath>
-                    </defs>
-                </svg>
-                <svg class="icon-social-media" width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_456_103)">
-                    <path d="M37.4 0H6.6C2.95492 0 0 2.95492 0 6.6V37.4C0 41.0451 2.95492 44 6.6 44H37.4C41.0451 44 44 41.0451 44 37.4V6.6C44 2.95492 41.0451 0 37.4 0Z" fill="#37AEE2"/>
-                    <path d="M17.1016 34.7188C16.1562 34.7188 16.2422 34.375 15.9844 33.5156L13.2344 24.4922L34.2891 12.1172" fill="#C8DAEA"/>
-                    <path d="M17.1016 34.7188C17.7031 34.7188 18.0469 34.375 18.4766 34.0312L22.3438 30.3359L17.5312 27.4141" fill="#A9C9DD"/>
-                    <path d="M17.5307 27.4143L29.1323 35.9221C30.3354 36.6956 31.3667 36.2659 31.7104 34.719L36.437 12.5471C36.8667 10.6565 35.6636 9.79713 34.3745 10.3987L6.78855 21.0549C4.98387 21.7424 4.98387 22.8596 6.4448 23.2893L13.5776 25.5237L29.9057 15.1253C30.6792 14.6956 31.3667 14.8674 30.8511 15.469" fill="#F6FBFE"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_456_103">
-                    <rect width="44" height="44" fill="white"/>
-                    </clipPath>
-                    </defs>
-                </svg>
-            </div>
+            </div> -->
         </div>
     </div>
 
     <!-- footer -->
     <footer class="footer">
         <div class="left-content-footer">
-            <svg width="249" height="41" viewBox="0 0 249 41" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <svg width="163" height="27" viewBox="0 0 249 41" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <rect width="249" height="41" fill="url(#pattern0_291_105)"/>
                 <defs>
                 <pattern id="pattern0_291_105" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -314,16 +271,16 @@
                     
             <p class="left-span-footer">ООО "НТК"Волна"</p>
             <p class="left-span-footer">ИНН 7716949748</p>
-            <p class="left-span-footer">КПП 771601001</p>
+            <p class="left-span-footer" style="padding-bottom: 42px">КПП 771601001</p>
         </div>
         <div class="center-content-footer">
             <h2 class="h-text-header">контакты</h2>
             <hr class="hr-footer">
-            <p class="center-span-footer" style="padding-bottom: 16px;">pa@prokennex.ru</p>
-            <p class="center-span-footer" style="padding-bottom: 42px;">8 (800) 551-77-74 (доб. 3)</p>
+            <p class="center-span-footer">pa@prokennex.ru</p>
+            <p class="center-span-footer" style="padding-bottom: 42px">8 (800) 551-77-74 (доб. 3)</p>
             <h2 class="h-text-header">адреса магазинов</h2>
             <hr class="hr-footer">
-            <p class="center-span-footer">129345, г. Москва, ул. Осташковская, вл. 14, корп. 1, стр. 3, этаж 2, офис 1<p>
+            <p class="center-span-footer" style="padding-bottom: 42px">129345, г. Москва, ул. Осташковская, вл. 14, корп. 1, стр. 3, этаж 2, офис 1<p>
         </div>
         <div class="right-content-footer">
             <h2 class="h-text-header">Документы</h2>
@@ -333,11 +290,6 @@
             <p class="links-docs-footer"><a href="#" class="link-footer">Cookies</a></p>
         </div>
     </footer>
-
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/sliders.js"></script>
 </body>
 </html>

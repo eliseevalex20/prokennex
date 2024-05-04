@@ -6,6 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<script>
+    // JavaScript для определения типа устройства и перенаправления
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        window.location.href = 'm-shop.html'; // Перенаправление на m-index.html
+    }
+</script>
 <body>
 
     <header class="header">

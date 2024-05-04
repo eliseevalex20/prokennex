@@ -2584,6 +2584,11 @@ body, html {
 
 @media screen and (max-width: 768px) {
 
+    .vrem{
+        display: flex;
+        flex-direction: column;
+    }
+
     .container{
         margin: 60px 15px;
     }
@@ -2600,6 +2605,10 @@ body, html {
 
     .icons a:last-child{
         margin-right: 0;
+    }
+
+    .basket-icon{
+        height: 35%;
     }
 
     .div-categories {
@@ -2841,4 +2850,96 @@ body, html {
         font-size: 15px;
         line-height: 16px;
     }
+
+    .main-section-content{
+        width: 100%;
+    }
+
+    .card-shop{
+        padding: 12px;
+    }
+
+    .img-card-shop{
+        max-width: 100%;
+    }
+
+    .row-shop-content{
+        justify-content: center;
+    }
+
+    .main-card-information{
+        flex-direction: column;
+    }
+
+    .div-slider-card-image{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-card-description{
+        width: 100%;
+    }
+
+    .main-card-description{
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .p-card-description{
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    .p-card-handle{
+        margin-top: 24px;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .btn-choice-handle{
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    .btn-in-basket{
+        width: 100%;
+    }
+
+    .div-buttons-features{
+        flex-direction: column;
+    }
+
+    .btn-features{
+        width: 100%;
+    }
+
+    .div-specifications {
+        border: none;
+    }
+
+    .name-technical-technologies{
+        font-size: 14px;
+        line-height: 22.64px;
+    }
+
+    .div-names-technical-technologies{
+        width: 70%;
+    }
+    
+    .div-parametrs-technical-technologies{
+        width: 30%;
+    }
+
+    .main-text-with-product, .main-text-same-this-product{
+        font-size: 24px;
+        line-height: 28px;
+        margin-top: 0;
+    }
+    
+    .container-card-information{
+        margin: 16px 15px;
+    }
+    
 }
