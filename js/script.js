@@ -40,13 +40,27 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-function toggleContent(contentId) {
-  var contentDivs = document.querySelectorAll('.div-content-info');
-  contentDivs.forEach(function(div) {
-      if (div.id === contentId) {
-          div.style.display = 'block';
-      } else {
-          div.style.display = 'none';
-      }
-  });
+function toggleContent(contentId, element) {
+    var contentDivs = document.querySelectorAll('.div-content-info');
+    contentDivs.forEach(function(div) {
+        if (div.id === contentId) {
+            div.style.display = 'block';
+        } else {
+            div.style.display = 'none';
+        }
+    });
+    
+    // Удаление жирного стиля со всех элементов
+    var sidebarItems = document.querySelectorAll('.p-sidebar-info');
+    sidebarItems.forEach(function(item) {
+        item.style.fontWeight = '300'; // Сброс жирного стиля
+        item.style.color = '#888888';
+        item.style.textDecoration = 'none';
+    });
+    
+    // Применение жирного стиля к выбранному элементу
+    element.style.fontWeight = '700';
+    element.style.color = '#000000';
+    element.style.textDecoration = 'underline';
 }
+

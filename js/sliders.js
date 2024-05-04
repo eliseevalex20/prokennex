@@ -17,5 +17,15 @@ $(document).ready(function(){
     });
 });
 
+$(document).ready(function(){
+  $('.m-slider-popular-products').slick({
+      infinite: true,
+      slidesToShow: 2, 
+      slidesToScroll: 2,
+      arrows: true,
+      dots: true 
+  });
+});
+
 
   
